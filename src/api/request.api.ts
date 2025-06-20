@@ -2,7 +2,7 @@ import axios from 'axios'
 import { QuizResult, QuizStartRequest, Category, CategoryQuestions } from '../types/quizs'
 import { store } from '../redux/store'
 
-const API_URL = import.meta.env.VITE_BASE_URL
+const API_URL = import.meta.env.VITE_API_BASE_URL
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
@@ -12,7 +12,7 @@ const axiosInstance = axios.create({
     }
 })
 console.log('djfjd', API_URL)
-console.log('nmnmnmmmmm', import.meta.env.VITE_BASE_URL)
+console.log('nmnmnmmmmm', import.meta.env.VITE_API_BASE_URL)
 
 axiosInstance.interceptors.request.use(
     config => {

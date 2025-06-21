@@ -19,17 +19,25 @@
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
+
+            .container {
+                background-image: url('../public/background.png') !important;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                /* width: 210mm; */
+                height: 297mm;
+                page-break-after: always;
+                padding-inline: 200px;
+            }
+
             .container-row {
                 display: flex;
             }
+
             .card1 {
                 background-color: #fd8331;
                 border-radius: 20px;
-            }
-
-            .container {
-                /* max-width: 700px; */
-                margin: 0 auto;
             }
 
             .top-cards {
@@ -55,7 +63,7 @@
             }
 
             .greeting {
-                font-size: 24px;
+                font-size: 30px;
                 font-weight: bold;
                 margin-bottom: 15px;
             }
@@ -67,7 +75,7 @@
                 border-radius: 10px;
                 text-align: center;
                 font-weight: bold;
-                font-size: 18px;
+                font-size: 30px;
                 margin-bottom: 15px;
             }
 
@@ -78,7 +86,7 @@
             }
 
             .results-title {
-                font-size: 16px;
+                font-size: 30px;
                 margin-bottom: 10px;
             }
 
@@ -270,6 +278,12 @@
                 color: white;
             }
 
+            /* .page {
+                width: 210mm;
+                height: 297mm;
+                page-break-after: always;
+            } */
+
             /* .without-prep {
                 background: linear-gradient(135deg, #87ceeb 0%, #4fc3f7 100%);
             }
@@ -314,6 +328,7 @@
                 padding: 8px;
                 margin: 3px 0;
                 font-weight: bold;
+                font-size: 16px;
             }
 
             .notes-section {
@@ -380,7 +395,8 @@
     </head>
     <body>
         <div style="width: 100%">
-            <div style="margin-inline: auto; max-width: 800px">
+            <!-- page 1 -->
+            <div class="container">
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -400,13 +416,13 @@
                         <div class="greeting">Салем!</div>
                         <div class="name-box">Торгулова<br />Назгуль</div>
                         <div class="class-info">
-                            <span><strong>Класс</strong><br />5</span>
-                            <span><strong>Цель</strong><br />Диагностика знаний</span>
+                            <span style="font-size: 20px"><strong>Класс</strong><br />5</span>
+                            <span style="font-size: 20px"><strong>Цель</strong><br />Диагностика знаний</span>
                         </div>
                     </div>
                     <div class="card-right">
                         <div class="results-title">Результаты тестирования</div>
-                        <div class="percentage">50.0%</div>
+                        <div style="border-radius: 15px; font-size: 30px" class="percentage">50.0%</div>
                     </div>
                 </div>
 
@@ -454,7 +470,8 @@
                 </div>
             </div>
 
-            <div style="margin-inline: auto; max-width: 800px" class="container">
+            <!-- page 2 -->
+            <div class="container">
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -513,7 +530,8 @@
                 </div>
             </div>
 
-            <div style="margin-inline: auto; max-width: 800px" class="container">
+            <!-- page 3 -->
+            <div class="container">
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -565,7 +583,8 @@
                 </div>
             </div>
 
-            <div style="margin-inline: auto; max-width: 800px; padding-bottom: 60px" class="container">
+            <!-- page 4 -->
+            <div style="padding-bottom: 60px" class="container">
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -587,11 +606,64 @@
 
                 <div class="comparison-section">
                     <div class="preparation-card without-prep">
-                        <div class="prep-header">Без подготовки</div>
-                        <div style="background-color: #50bcee; color: white" class="percentage">10%</div>
-                        <div style="background-color: #7bc5e7" class="percentage">5%</div>
-                        <div style="background-color: #8ccdec" class="percentage">15%</div>
-                        <div style="background-color: #add8eb" class="percentage">15%</div>
+                        <div
+                            style="background-color: #50bcee; font-size: 26px; border-radius: 10px"
+                            class="prep-header"
+                        >
+                            Без подготовки
+                        </div>
+                        <div
+                            style="
+                                background-color: #50bcee;
+                                color: white;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            10%
+                        </div>
+                        <div
+                            style="
+                                background-color: #7bc5e7;
+                                color: white;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            5%
+                        </div>
+                        <div
+                            style="
+                                background-color: #8ccdec;
+                                color: white;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            15%
+                        </div>
+                        <div
+                            style="
+                                background-color: #add8eb;
+                                color: white;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            15%
+                        </div>
                     </div>
 
                     <div class="middle-section">
@@ -602,11 +674,64 @@
                     </div>
 
                     <div class="preparation-card with-prep">
-                        <div class="prep-header">С подготовкой</div>
-                        <div class="percentage">96%</div>
-                        <div class="percentage">91%</div>
-                        <div class="percentage">94%</div>
-                        <div class="percentage">94%</div>
+                        <div
+                            style="background-color: #4caf50; font-size: 26px; border-radius: 10px"
+                            class="prep-header"
+                        >
+                            С подготовкой
+                        </div>
+                        <div
+                            style="
+                                background-color: #4caf50;
+                                color: white;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            96%
+                        </div>
+                        <div
+                            style="
+                                background-color: #66bb6a;
+                                color: white;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            91%
+                        </div>
+                        <div
+                            style="
+                                background-color: #81c784;
+                                color: white;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            94%
+                        </div>
+                        <div
+                            style="
+                                background-color: #a5d6a7;
+                                color: black;
+                                padding: 15px;
+                                margin-bottom: 5px;
+                                border-radius: 8px;
+                                text-align: center;
+                                font-weight: bold;
+                            "
+                        >
+                            94%
+                        </div>
                     </div>
                 </div>
 

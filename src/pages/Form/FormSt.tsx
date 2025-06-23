@@ -4,7 +4,7 @@ import LanguageSwitcher from '../../components/LanguageSwitcher'
 import { useTranslation } from 'react-i18next'
 // import yellowBg from '../../assets/images/yellow-bg.png'
 import { useQuery, useMutation } from '@tanstack/react-query'
-import { fetchSubject, startQuiz } from '../../api/request.api'
+import { startQuiz } from '../../api/request.api'
 import { useState, useEffect } from 'react'
 import { QuizStartRequest, QuizResult, Category } from '../../types/quizs'
 import { useNavigate } from 'react-router-dom'
@@ -165,7 +165,7 @@ export default function FormSt() {
                                     value: category.id,
                                     label: category.name
                                 }))}
-                                onChange={selectedOption => setSelectedCategory(selectedOption?.value || null)}
+                                onChange={(selectedOption: any) => setSelectedCategory(selectedOption?.value || null)}
                                 required
                                 isDisabled={isStarting}
                                 className='custom-select'
@@ -185,7 +185,7 @@ export default function FormSt() {
                                     value: category.id,
                                     label: category.name
                                 }))}
-                                onChange={selectedOption => setSelectedCategory(selectedOption?.value || null)}
+                                onChange={(selectedOption: any) => setSelectedCategory(selectedOption?.value || null)}
                                 required
                                 isDisabled={isStarting}
                                 className='custom-select'

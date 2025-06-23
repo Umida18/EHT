@@ -274,7 +274,7 @@
             }
 
             .preparation-card {
-                flex: 1;
+                width: 33%;
                 color: white;
             }
 
@@ -396,7 +396,7 @@
     <body>
         <div style="width: 100%">
             <!-- page 1 -->
-            <div class="container">
+            <div style="background-image: url('../public/background.png')" class="container">
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -471,7 +471,7 @@
             </div>
 
             <!-- page 2 -->
-            <div class="container">
+            <div style="background-image: url('../public/background.png')" class="container">
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -531,7 +531,7 @@
             </div>
 
             <!-- page 3 -->
-            <div class="container">
+            <div style="background-image: url('../public/background.png')" class="container">
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -584,7 +584,11 @@
             </div>
 
             <!-- page 4 -->
-            <div style="padding-bottom: 60px" class="container">
+            <div
+                style="background-image: url('../public/background.png')"
+                style="padding-bottom: 60px"
+                class="container"
+            >
                 <div style="display: flex; justify-content: center; align-items: center; padding-block: 50px">
                     <img style="height: 140px" src="../public/logo2.png" alt="" />
                 </div>
@@ -607,127 +611,227 @@
                 <div class="comparison-section">
                     <div class="preparation-card without-prep">
                         <div
-                            style="background-color: #50bcee; font-size: 26px; border-radius: 10px"
+                            style="background-color: #50bced; font-size: 26px; border-radius: 10px"
                             class="prep-header"
                         >
                             Без подготовки
                         </div>
                         <div
+                            class=""
                             style="
-                                background-color: #50bcee;
+                                background-color: #50bced;
                                 color: white;
-                                padding: 15px;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                font-size: 20px;
                             "
                         >
                             10%
                         </div>
                         <div
                             style="
-                                background-color: #7bc5e7;
-                                color: white;
-                                padding: 15px;
+                                background-color: #a8def8;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                position: relative;
+                                top: -6%;
+                                font-size: 20px;
                             "
                         >
                             5%
                         </div>
                         <div
                             style="
-                                background-color: #8ccdec;
-                                color: white;
-                                padding: 15px;
+                                background-color: #d4eefb;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                position: relative;
+                                top: -11%;
+                                font-size: 20px;
                             "
                         >
                             15%
                         </div>
                         <div
                             style="
-                                background-color: #add8eb;
-                                color: white;
-                                padding: 15px;
+                                background-color: #eaf7fd;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                position: relative;
+                                top: -16%;
+                                font-size: 20px;
                             "
                         >
                             15%
                         </div>
                     </div>
 
-                    <div class="middle-section">
-                        <div class="middle-item">Электротехника и энергетика</div>
-                        <div class="middle-item">Стандартизация, сертификация и метрология (по отраслям)</div>
-                        <div class="middle-item">Механика</div>
-                        <div class="middle-item">Коммуникации и коммуникационные технологии</div>
+                    <div style="display: flex; flex-direction: column; width: 33%; margin-top: 60px">
+                        <div
+                            style="
+                                background-color: #f1c2a4;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
+                                margin-bottom: 5px;
+                                border-top-right-radius: 10px;
+                                border-top-left-radius: 10px;
+                                text-align: center;
+                                font-weight: bold;
+                                border: 2px solid black;
+                            "
+                        >
+                            Электротехника и энергетика
+                        </div>
+                        <div
+                            style="
+                                background-color: #f9a871;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
+                                margin-bottom: 5px;
+                                border-top-right-radius: 10px;
+                                border-top-left-radius: 10px;
+                                text-align: center;
+                                font-weight: bold;
+                                position: relative;
+                                top: -6%;
+                                border: 2px solid black;
+                            "
+                        >
+                            Стандартизация, сертификация и метрология (по отраслям)
+                        </div>
+                        <div
+                            style="
+                                background-color: #f1c2a4;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
+                                margin-bottom: 5px;
+                                border-top-right-radius: 10px;
+                                border-top-left-radius: 10px;
+                                text-align: center;
+                                font-weight: bold;
+                                position: relative;
+                                top: -11%;
+                                border: 2px solid black;
+                            "
+                        >
+                            Механика
+                        </div>
+                        <div
+                            style="
+                                background-color: #f9a871;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
+                                margin-bottom: 5px;
+                                border-radius: 10px;
+                                text-align: center;
+                                font-weight: bold;
+                                position: relative;
+                                top: -16%;
+                                border: 2px solid black;
+                            "
+                        >
+                            Коммуникации и коммуникационные технологии
+                        </div>
                     </div>
 
                     <div class="preparation-card with-prep">
                         <div
-                            style="background-color: #4caf50; font-size: 26px; border-radius: 10px"
+                            style="background-color: #54ab9b; font-size: 26px; border-radius: 10px"
                             class="prep-header"
                         >
                             С подготовкой
                         </div>
                         <div
                             style="
-                                background-color: #4caf50;
+                                background-color: #54ab9b;
                                 color: white;
-                                padding: 15px;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                font-size: 20px;
                             "
                         >
                             96%
                         </div>
                         <div
                             style="
-                                background-color: #66bb6a;
-                                color: white;
-                                padding: 15px;
+                                background-color: #aad5cc;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                position: relative;
+                                top: -6%;
+                                font-size: 20px;
                             "
                         >
                             91%
                         </div>
                         <div
                             style="
-                                background-color: #81c784;
-                                color: white;
-                                padding: 15px;
+                                background-color: #d5e9e7;
+                                color: black;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-top-right-radius: 15px;
+                                border-top-left-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                position: relative;
+                                top: -11%;
+                                font-size: 20px;
                             "
                         >
                             94%
                         </div>
                         <div
                             style="
-                                background-color: #a5d6a7;
+                                background-color: #eaf4f3;
                                 color: black;
-                                padding: 15px;
+                                padding-inline: 15px;
+                                padding-block: 25px;
                                 margin-bottom: 5px;
-                                border-radius: 8px;
+                                border-radius: 15px;
                                 text-align: center;
                                 font-weight: bold;
+                                position: relative;
+                                top: -16%;
+                                font-size: 20px;
                             "
                         >
                             94%

@@ -4,12 +4,14 @@ import Quiz from '../pages/Quiz/Quiz'
 import QlientResult from '../pages/Result/QlientResult'
 // import QuizResult from "../pages/Result/QuizResult";
 import SubmitResult from '../pages/Result/SubmitResult'
+import FormSt from '../pages/Form/FormSt'
 // import QuizTest from '../pages/QuizTest'
 const AppRoutes = () => {
     return (
         <Routes>
             <Route path='/' element={<Form />} />
             <Route path='/test/:categorySetId' element={<Quiz />} />
+            <Route path='/form' element={<FormSt />} />
             <Route
                 path='/qlient-result'
                 element={
